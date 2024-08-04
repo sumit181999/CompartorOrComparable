@@ -1,0 +1,17 @@
+Comparable
+Purpose: It is used to define the natural ordering of objects of a class. It allows a class to be compared with itself.
+Implementation: A class implements the Comparable interface and overrides its compareTo method.
+Usage: Use Comparable when you want to define a natural order for the objects of a class and when the class itself
+should be responsible for its own ordering.
+
+Comparator
+Purpose: It is used to define multiple ordering strategies for a class. It allows you to create different ways to compare
+objects of a class without modifying the class itself. Means that Comparator interface enable you to separate the logic of
+comparison from the class itself. It provides us the decoupling. You can also create multiple Comparator instances,
+each encapsulating a different comparison strategy, and apply them as needed. This avoids hard-coding a single
+comparison method within the class.
+Implementation: Create a separate class or use an anonymous class or lambda expression that implements the
+Comparator interface and overrides its compare method.
+Usage: Use Comparator when you want to sort objects in different ways or when you cannot modify the class to
+implement Comparable.
+
